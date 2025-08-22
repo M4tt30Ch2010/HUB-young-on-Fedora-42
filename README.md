@@ -18,7 +18,7 @@ Now, exctract the content of the data.tar.zst archive (where the actual files ar
 `tar -xf data.tar.*`
 Inside, You'll find the `usr` folder containing the program files.
 ## Move the program files
-The executable you need is inside `use/local/bin/hubyoung`, and the file is called `hub-young-prod`.
+The executable you need is inside `usr/local/bin/hubyoung`, and the file is called `hub-young-prod`.
 To keep things organized, I created a hidden `.app` folder in my home directory:
 `mkdir -p ~/.app/hubyoung
 mv usr ~/.app/hubyoung`
@@ -26,13 +26,21 @@ mv usr ~/.app/hubyoung`
 To find **HUB Young** in the **Show application** menù, create a `.desktop` file:
 `nano ~/.local/share/applications/hubyoung.desktop`
 paste and edit the following:
-`[Desktop Entry]
-Name=HUB Young
-Exec=/home/USER/.app/hubyoung/hub-young-prod
-Icon=/path/to/your/icon.svg
-Type=Application
-Categories=Education;
-Terminal=false`
+
+`[Desktop Entry]`
+
+`Name=HUB Young`
+
+`Exec=/home/USER/.app/hubyoung/hub-young-prod`
+
+`Icon=/path/to/your/icon.svg`
+
+`Type=Application`
+
+`Categories=Education;`
+
+`Terminal=false`
+
 (Remember to replace USER with you're username and change the icon path)
 ## Refresh the menu
 Finally, restart your PC or simply log-out and log back to refresh the app menu.
